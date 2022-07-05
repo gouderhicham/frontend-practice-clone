@@ -58,7 +58,19 @@ nav{
     padding: 0.62rem 20px ;
   }
 }
+.hamburger{
+  display: none;
+}
 @media screen and (max-width:750px){
+  .hamburger{
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .hamburger img{
+    width: 30px;
+
+  }
   nav{
     background: greenyellow;
     padding: 0.5rem 15px ;
@@ -80,7 +92,7 @@ nav{
   height: 100vh;
   top: 0;
   right: -300px;
-  transition: 1s ease linear all ;
+  transition: 0.2s ease-in-out all ;
 }
 .nav-links-mobile a{
   text-decoration: none;
@@ -97,9 +109,6 @@ a:hover{
   text-decoration: underline;
   color: black;
 }
-.hamburger{
-  z-index: 10;
-}
-.hamburger img{
-  width: 30px;
+.fade-out{
+  right: -2px;
 }
