@@ -8,7 +8,7 @@ body {
   font-family: "Archivo", sans-serif;
   height: 3000px;
 }
-nav{
+nav {
   position: fixed;
   width: 100%;
   display: flex;
@@ -19,26 +19,25 @@ nav{
 }
 
 .logo a h1 {
-  font-size:30px;
+  font-size: 30px;
   font-family: "DM Serif Display", serif;
 }
 .logo a {
   color: transparent;
   color: rgb(51, 51, 51);
   text-decoration: none;
-  
 }
-.nav-links{
+.nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin-left: auto;
 }
-.nav-links li{
+.nav-links li {
   list-style: none;
 }
-.nav-links a{
-  color :rgb(51, 51, 51);
+.nav-links a {
+  color: rgb(51, 51, 51);
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: bold;
@@ -46,55 +45,29 @@ nav{
   letter-spacing: 0.5px;
 }
 
-@media screen and (min-width:1200px) {
-  nav{
-    padding: 0.62rem 5% ;
-    background: pink;
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 0.62rem 5%;
+    background: #faebd7;
   }
 }
-@media screen and (min-width:750px) and (max-width:1200px) {
-  nav{
-    background: red;
-    padding: 0.62rem 20px ;
-  }
-}
-.hamburger{
+.hamburger {
   display: none;
 }
-@media screen and (max-width:750px){
-  .hamburger{
-    display: block;
-    z-index: 10;
-    cursor: pointer;
-  }
-  .hamburger img{
-    width: 30px;
 
-  }
-  nav{
-    background: greenyellow;
-    padding: 0.5rem 15px ;
-  }
-  .logo a h1 {
-    font-size:1.55rem;
-  }
-  .nav-links{
-    display: none;
-  }
-}
-.mobile-menu{
+.mobile-menu {
   position: fixed;
   z-index: 0;
   width: 300px;
   max-width: 300px;
-  background:white;
-  border-left:2px black solid;
+  background: white;
+  border-left: 2px black solid;
   height: 100vh;
   top: 0;
   right: -300px;
-  transition: 0.2s ease-in-out all ;
+  transition: 0.2s ease-in-out all;
 }
-.nav-links-mobile a{
+.nav-links-mobile a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -105,10 +78,106 @@ nav{
   letter-spacing: 1px;
   list-style: none;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
   color: black;
 }
-.fade-out{
+.fade-out {
   right: -2px;
+}
+
+.Home_hero {
+  display: flex;
+  flex-direction: row;
+  padding: 14rem 5.5%;
+  justify-content: space-between;
+  background-color: #faebd7;
+  border-bottom: 2px black solid;
+}
+.Home_hero .title {
+  font-size: 55px;
+  font-family: "DM Serif Display", serif;
+  line-height: 3.8rem;
+}
+.right img {
+  width: 100%;
+}
+.left .p1,
+.left .p2 {
+  font-size: 1.45rem;
+  padding: 0.8rem 3.5rem 0.8rem 0;
+  line-height: 2.2rem;
+}
+.left .buttons {
+  padding: 0.8rem 0;
+  display: flex;
+  flex-direction: row;
+}
+.buttons a {
+  border: 2px solid black;
+  border-radius: 0px;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  transition: 0.3s ease all;
+}
+.buttons a:hover {
+  background: black;
+  color: white;
+}
+.buttons .btn2 {
+  margin-left: 1rem;
+}
+.buttons .btn1 {
+  background: white;
+}
+.right img {
+  margin-top: -60px;
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  nav {
+    background: red;
+    padding: 0.62rem 20px;
+  }
+  .Home_hero {
+    padding: 14rem 2.5%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hamburger {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .hamburger img {
+    width: 30px;
+  }
+  nav {
+    background: greenyellow;
+    padding: 0.5rem 15px;
+  }
+  .logo a h1 {
+    font-size: 1.55rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .Home_hero {
+    padding: 5.5rem 1rem;
+  }
+  .right img {
+    display: none;
+  }
+  .left .title {
+    font-size: 32px;
+  }
+  .left .p1,
+  .left .p2 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 0.8rem 3.5rem 0.8rem 0;
+  }
 }
