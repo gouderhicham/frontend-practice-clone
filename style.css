@@ -89,7 +89,7 @@ a:hover {
 .Home_hero {
   display: flex;
   flex-direction: row;
-  padding: 14rem 5.5%;
+  padding: 14rem 5.5% 10rem 5.5%;
   justify-content: space-between;
   background-color: #faebd7;
   border-bottom: 2px black solid;
@@ -101,6 +101,8 @@ a:hover {
 }
 .right img {
   width: 100%;
+  max-width: 1200px;
+  min-width: 500px;
 }
 .left .p1,
 .left .p2 {
@@ -137,16 +139,75 @@ a:hover {
 .right img {
   margin-top: -60px;
 }
-@media screen and (min-width: 750px) and (max-width: 1200px) {
+
+
+
+.second-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  max-width: 725px;
+  padding-top: 3rem;
+  line-height: 2.75rem;
+}
+.icons-section .icons img{
+  max-width: 100px;
+  min-width: 99px;
+}
+.icons-section .icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.icons-section .icons p {
+  max-width: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  line-height: 1.7rem;
+}
+.icons-section {
+  padding: 3rem 5rem 3rem 5rem ;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: 78%;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.8rem 0 1.8rem 0;
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
   nav {
     background: red;
     padding: 0.62rem 20px;
   }
   .Home_hero {
-    padding: 14rem 2.5%;
+    padding: 10rem 1.5rem 4rem 1rem;
+  }
+  .right img {
+    margin-top: 50px;
+  }
+  .icons-section {
+    padding: 3rem 0rem 3rem 0rem ;
+    width: 95%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width:930px) {
+  .icons-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    max-width: 440px;
+  }
+  .icons-section .icons img ,.icons-section .icons p{
+    margin: 0 0rem 0 0rem;
+  }
+}
+@media screen and (max-width: 770px) {
   .hamburger {
     display: block;
     z-index: 10;
@@ -166,18 +227,35 @@ a:hover {
     display: none;
   }
   .Home_hero {
-    padding: 5.5rem 1rem;
+    padding: 5.8rem 1rem 2.1rem 1rem;
   }
   .right img {
     display: none;
   }
   .left .title {
     font-size: 32px;
+    line-height: 2.4rem;
   }
   .left .p1,
   .left .p2 {
     font-size: 1.1rem;
     line-height: 1.6rem;
-    padding: 0.8rem 3.5rem 0.8rem 0;
+    padding: 0.8rem 3.5rem 0.6rem 0;
   }
+  .icons-section .icons {
+    flex-direction: column;
+  }
+  .icons-section .icons p {
+    margin-top: 25px ;
+  }
+  .second-title{
+    font-size: 32px;
+    padding:3rem 1.5rem 3rem 1.5rem ;
+    line-height: 2.3rem;
+  }
+  .icons-section{
+    padding: 0 ;
+    margin-top: -30px;
+  }
+  
 }
