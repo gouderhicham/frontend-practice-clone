@@ -4,8 +4,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / */
 body {
   font-family: "Archivo", sans-serif;
+  overflow-x: hidden;
 }
 nav {
   position: fixed;
@@ -47,7 +53,7 @@ nav {
 @media screen and (min-width: 1200px) {
   nav {
     padding: 0.62rem 5%;
-    background: #faebd7;
+    background: white;
   }
 }
 .hamburger {
@@ -114,6 +120,7 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
+
 .buttons a,
 .last-section a {
   border: 2px solid black;
@@ -240,7 +247,7 @@ a:hover {
   .left .p2 {
     font-size: 1.1rem;
     line-height: 1.6rem;
-    padding: 0.8rem 3.5rem 0.6rem 0;
+    padding: 0.8rem 1rem 0.6rem 0;
   }
   .icons-section .icons {
     flex-direction: column;
@@ -303,3 +310,14 @@ footer p{
   letter-spacing: 1px;
   font-weight: bold;
 }
+@media screen and (max-width:600px) {
+  .last-section h2{
+    max-width: 350px;
+  }
+}
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+/* white = pc / red = tablet / green mobile / /*
+
