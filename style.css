@@ -6,7 +6,6 @@
 }
 body {
   font-family: "Archivo", sans-serif;
-  height: 3000px;
 }
 nav {
   position: fixed;
@@ -115,7 +114,8 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
-.buttons a {
+.buttons a,
+.last-section a {
   border: 2px solid black;
   border-radius: 0px;
   padding: 0.8rem 1.3rem;
@@ -126,9 +126,10 @@ a:hover {
   color: rgb(51, 51, 51);
   transition: 0.3s ease all;
 }
-.buttons a:hover {
+.buttons a:hover , .last-section a:hover{
   background: black;
   color: white;
+  
 }
 .buttons .btn2 {
   margin-left: 1rem;
@@ -140,8 +141,6 @@ a:hover {
   margin-top: -60px;
 }
 
-
-
 .second-title {
   font-family: "DM Serif Display", serif;
   font-size: 40px;
@@ -151,7 +150,7 @@ a:hover {
   padding-top: 3rem;
   line-height: 2.75rem;
 }
-.icons-section .icons img{
+.icons-section .icons img {
   max-width: 100px;
   min-width: 99px;
 }
@@ -168,14 +167,14 @@ a:hover {
   line-height: 1.7rem;
 }
 .icons-section {
-  padding: 3rem 5rem 3rem 5rem ;
+  padding: 3rem 5rem 3rem 5rem;
   display: grid;
   margin: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   width: 78%;
 }
-.icons{
+.icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -193,17 +192,18 @@ a:hover {
     margin-top: 50px;
   }
   .icons-section {
-    padding: 3rem 0rem 3rem 0rem ;
+    padding: 3rem 0rem 3rem 0rem;
     width: 95%;
   }
 }
-@media screen and (max-width:930px) {
+@media screen and (max-width: 930px) {
   .icons-section {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     max-width: 440px;
   }
-  .icons-section .icons img ,.icons-section .icons p{
+  .icons-section .icons img,
+  .icons-section .icons p {
     margin: 0 0rem 0 0rem;
   }
 }
@@ -246,16 +246,60 @@ a:hover {
     flex-direction: column;
   }
   .icons-section .icons p {
-    margin-top: 25px ;
+    margin-top: 25px;
   }
-  .second-title{
+  .second-title {
     font-size: 32px;
-    padding:3rem 1.5rem 3rem 1.5rem ;
+    padding: 3rem 1.5rem 3rem 1.5rem;
     line-height: 2.3rem;
   }
-  .icons-section{
-    padding: 0 ;
+  .icons-section {
+    padding: 0;
     margin-top: -30px;
   }
-  
+}
+.last-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.last-section h2 {
+  max-width: 500px;
+  font-size: 30px;
+  font-family: "DM Serif Display", serif;
+  line-height: 1.1;
+}
+.last-section a {
+  margin-top:1.5rem;
+}
+footer{
+  background: black;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  flex-direction: column;
+}
+.footer-links a , footer p{
+  color: white;
+  text-decoration: none;
+}
+footer p{
+  padding: 0.5rem 0rem;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5rem 0rem;
+}
+.footer-links li {
+  list-style: none;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
